@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe8e8; /* Fondo rosa claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 80%; /* Controla el tamaño máximo */
+    height: 90%; /* Asegura que el contenedor se adapte a la pantalla */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* El contenedor no tendrá scroll, solo el contenido de la receta */
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #ff6363;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #ff6363; /* Color principal */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff4242;
+}
+
+#recipe-display {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #555;
+    max-height: 300px; /* Ajusta el tamaño máximo del contenido de la receta */
+    overflow-y: auto; /* Habilita el scroll solo en el área del contenido de la receta */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+
+#recipe-display::-webkit-scrollbar { width: 0px; height: 0px; }
+#recipe-display::-webkit-scrollbar-thumb { background: transparent; }

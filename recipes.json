@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Espagueti a la boloñesa",
+        "ingredients": ["espagueti", "carne molida", "tomate", "cebolla", "ajo"],
+        "instructions": "Cocina el espagueti. Prepara la salsa con carne, tomate, cebolla y ajo. Mezcla y sirve."
+    },
+    {
+        "name": "Ensalada César",
+        "ingredients": ["lechuga", "pollo", "crutones", "queso parmesano", "aderezo César"],
+        "instructions": "Mezcla todos los ingredientes en un bowl. Sirve frío."
+    },
+    {
+        "name": "Tacos de pollo",
+        "ingredients": ["tortillas", "pollo", "cebolla", "cilantro", "salsa"],
+        "instructions": "Cocina el pollo, corta en tiras y sirve en tortillas con cebolla, cilantro y salsa."
+    }
+]
